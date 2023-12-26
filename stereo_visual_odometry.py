@@ -419,7 +419,7 @@ def main():
         gt_path.append((gt_pose[0, 3], gt_pose[2, 3]))
         estimated_path.append((cur_pose[0, 3], cur_pose[2, 3]))
     plotting.visualize_paths(gt_path, estimated_path, "Stereo Visual Odometry",
-                             file_out=os.path.basename(data_dir) + ".html")
+                             file_out=os.path.basename(data_dir) + "_stereo.html")
 
 
 if __name__ == "__main__":

@@ -134,7 +134,7 @@ class VisualOdometry():
             return R2, np.ndarray.flatten(t)
 
 def main():
-    data_dir = "KITTI_sequence_1"
+    data_dir = "KITTI_sequence_2"
     vo = VisualOdometry(data_dir)
 
     play_trip(vo.images)
